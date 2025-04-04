@@ -1,0 +1,53 @@
+姓名：构建混淆bpb面板
+
+在：
+  推：
+    分支：
+      - - 主要的
+  日程：
+    -cron：“ 0 1 * * *”
+
+许可：
+  内容：写
+
+工作：
+  建造：
+    运行：ubuntu-latest
+
+    步骤：
+      -       名称：查看代码
+        用途：Action/Checkout@V4
+
+      -       名称：设置node.js
+        用途：操作/设置节点@v4
+        和：
+          节点交换：“最新”
+
+      -       名称：安装依赖项
+        运行：|
+          npm安装-G javaScript -obfuscator
+
+      -       名称：克隆bpb workjs
+        运行：|
+          wget -o rount.js https://raw.githubusercontent.com/bia-pain-bache/bpb-worker-panel/refs/refs/refs/refs/refs/refs/refs/refs/refs/refs/m ain/main/main/main/main/main/main/main/build/build/build/build/build/build/build/build/build/unobfuscated-worker.js-js-js---
+
+      -       名称：混淆bpb工人js
+        运行：|
+          javascript -obfuscator oneration.js -输出_worker.js \
+          ---            true \ true \
+          -           识别器名称生成剂六边形\
+          -           重命名-全球词true \ true \ true \ \ \
+          ---            true \ true \
+          -           弦乐 -阵列编码-'base64' \ 'base64' \
+          -           弦乐-阵列-阈值-0.75 \
+          -             transform-object-keys true \
+          -           错误的\
+          -           简化是真的
+
+      -       名称：提交更改
+        用途：stefanzweifel/git-auto-commit-action@v5
+        和：
+          分支：主
+          commit_message：'：arrow_up：更新最新的bpb面板' '：arrow_up：更新最新的bpb面板'
+          commit_author：'github-actions [bot] <github-actions [bot]@users.noreply.github.com>' 'github-actions [bot] <github-actions [bot actions [bot]@users.noreply.github.com>'
+          push_options：' -  set -upstream'' -  set -upstream'
